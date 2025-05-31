@@ -19,7 +19,6 @@ username = "sanket-valani-tss"
 current_year = datetime.now().year
 
 try:
-    current_year = 2024
     url = f"https://github.com/{username}?tab=overview&from={current_year}-01-01"
     print(f"Capturing data for year {current_year}...")
     driver.get(url)

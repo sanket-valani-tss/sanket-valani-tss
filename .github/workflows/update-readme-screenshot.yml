@@ -1,7 +1,7 @@
-name: Update Readme.md
+name: Update Readme.md screenshot
 on:
-  # schedule:
-  #   - cron: '0 0 * * *'
+  schedule:
+    - cron: '30 4 * * 1' # 10AM IST every monday
   workflow_dispatch:
 jobs:
   update-readme-screenshot:
