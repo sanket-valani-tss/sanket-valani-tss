@@ -13,9 +13,16 @@ I'm a passionate Backend developer.
 <code><img height="20" alt="K8s" src="https://raw.githubusercontent.com/github/explore/01ea2a586e5da744792d0ccfce2f68b861f29301/topics/kubernetes/kubernetes.png"></code>
 
 ## GitHub Contributions & Achievements
-![2025 Contribution Graph](assets/contribution_graph_2025.png)
+<div style="padding: 5px;">
+  <img src="assets/contribution_graph_2025.png" alt="2025 Contribution Graph" style="border-radius: 5px;" />
+</div>
 
-![2024 Contribution Graph](assets/contribution_graph_2024.png)
+<div style="padding: 5px;">
+  <img src="assets/contribution_graph_2024.png" alt="2024 Contribution Graph" style="border-radius: 5px;" />
+</div>
 
-![GitHub Achievements](assets/achievements_screenshot.png)
+<div style="padding: 5px;">
+  <img src="assets/achievements_screenshot.png" alt="GitHub Achievements" style="border-radius: 5px;" />
+</div>
+
 
