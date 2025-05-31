@@ -4,9 +4,31 @@ on:
   #   - cron: '0 0 * * *'
   workflow_dispatch:
 jobs:
-  build:
+  update-readme-screenshot:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Your step
-        run: echo "Hi"
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies, execute script
+        run: |
+          pip install -r app/requirements.txt
+          python app/update-readme-screenshot.py
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git status
+
+          if git diff-index --quiet HEAD --; then
+            echo "No changes to commit"
+          else
+            echo "Done"
+            # git restore .
+            # git push origin main
+          fi
